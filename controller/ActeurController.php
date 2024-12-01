@@ -12,7 +12,7 @@ class ActeurController {
 
         $requete = $pdo->query(
 
-            "SELECT CONCAT(p.nom,' ', p.prenom) AS acteur, a.id_acteur
+            "SELECT img, p.nom, p.prenom, a.id_acteur
             FROM personne p
             INNER JOIN acteur a 
             ON p.id_personne = a.id_personne"

@@ -6,6 +6,8 @@ $castings = $requeteCasting->fetchAll();
 
 ?>
 
+<h1 class="titleCategory">Détail des films</h1>
+
 <table class="uk-table uk-table-striped">
     <thead>
         <tr>
@@ -56,6 +58,6 @@ $castings = $requeteCasting->fetchAll();
 $titre = "Detail";
 $titre_secondaire = "Detail film";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";
 
 ?>

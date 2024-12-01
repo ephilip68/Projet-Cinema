@@ -1,8 +1,8 @@
 <?php ob_start(); ?>
 
-<div>
-    <h1>AJOUTER UN GENRE</h1>
-</div>
+
+<h1 class="titleCategory">AJOUTER UN GENRE</h1>
+
 
 <div>
     <form action="index.php?action=addGenre" method="post">
@@ -21,6 +21,6 @@
 $titre = "add Genre";
 $titre_secondaire = "add Genre";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";
 
 ?>

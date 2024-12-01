@@ -3,9 +3,9 @@
 $genres = $requete->fetchAll();
 
 ?>
-<h1>Liste Des Genres</h1>
+<h1 class="titleCategory">Liste Des Genres</h1>
 
-<table>
+<table class="uk-table uk-table-striped">
     <thead>
         <tr>
             <th>NOM GENRE</th>
@@ -34,4 +34,4 @@ $genres = $requete->fetchAll();
 
 $titre = "Liste des genres";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";

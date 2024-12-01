@@ -6,6 +6,8 @@ $nbFilms = $requeteNbFilms->fetchAll();
 
 ?>
 
+<h1 class="titleCategory">Détail des Réalisateurs</h1>
+
 <table class="uk-table uk-table-striped">
     <thead>
         <tr>
@@ -56,6 +58,6 @@ $nbFilms = $requeteNbFilms->fetchAll();
 $titre = "Detail realisateur";
 $titre_secondaire = "Detail realisateur";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";
 
 ?>

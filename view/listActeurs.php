@@ -1,32 +1,34 @@
 <?php ob_start(); ?>
 
-<h1>Liste Des Acteurs</h1>
+<h1 class="titleCategory">Liste Des Acteurs</h1>
 
-<table>
+<table class="uk-table uk-table-striped" id="tableActeur">
     <thead>
         <tr>
+            
             <th>NOM</th>
             <th>PRENOM</th>
-            <th>DATE DE NAISSANCE</th>
         </tr>
     </thead>
     <tbody>
         <?php 
-             foreach($requete->fetchAll() as $acteur) { 
-
+            foreach($requete->fetchAll() as $acteur) { 
         
                 ?>
-                 <tr>
-                    <td><a href="index.php?action=detailActeur&id=<?= $acteur['id_acteur']?>"><?php echo $acteur["acteur"] ?></a></td>
+                <tr>
+                    <td><a href="index.php?action=detailActeur&id=<?= $acteur['id_acteur']?>"><?php echo $acteur["nom"] ?></a></td>
+                    <td><a href="index.php?action=detailActeur&id=<?= $acteur['id_acteur']?>"><?php echo $acteur["prenom"] ?></a></td>
                 </tr>
+
         <?php 
-             } 
+            } 
         ?>
-     </tbody>
+    </tbody>
 </table>
+
 
 <?php
 
 $titre = "Liste des acteurs";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";

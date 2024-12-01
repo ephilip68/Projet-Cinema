@@ -1,6 +1,6 @@
 <?php ob_start(); ?>
 
-<h1>Liste Des Films</h1>
+<h1 class="titleCategory">Liste Des Films</h1>
 
 <table class="uk-table uk-table-striped">
     <thead>
@@ -36,4 +36,4 @@
 $titre = "Liste des films";
 $titre_secondaire = "Liste des films";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";

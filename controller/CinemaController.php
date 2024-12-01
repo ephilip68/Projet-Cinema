@@ -9,10 +9,12 @@ class CinemaController {
     public function listFilms() {
 
         $pdo = Connect::seConnecter();
-        $requete = $pdo->query("
-            SELECT id_film,titre, annee, duree, resumes
-            FROM film
-            ");
+        $requete = $pdo->query(
+
+            "SELECT f.id_film,f.titre, f.annee, f.duree, f.resumes
+            FROM film f"
+
+        );
      
     // définir PDO 
     // requetes qui recuperent plusieurs enregistrements
@@ -68,6 +70,8 @@ class CinemaController {
 
         // la variable requete renvoie un seul enregistrement donc je vais juste fetch dans la vue 
         require "view/detailFilm.php";
+    
+        
 
     }
 

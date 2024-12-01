@@ -4,9 +4,9 @@ $realisateurs = $requete->fetchAll();
 
 ?>
 
-<div >
-    <h1>AJOUTER UN FILM</h1>
-</div>
+
+<h1 class="titleCategory">AJOUTER UN FILM</h1>
+
 
 <div>
     <form action="index.php?action=addFilm" method="post">
@@ -31,7 +31,7 @@ $realisateurs = $requete->fetchAll();
                 <?php
                 foreach ($realisateurs as $realisateur) { ?>
 
-                    <option><?= $realisateur["nom"] . " " . $realisateur["prenom"] ?></option>
+                    <option value="<?= $realisateur["id_realisateur"] ?>"><?= $realisateur["nom"] . " " . $realisateur["prenom"] ?></option>
 
                 <?php
                 } ?>
@@ -46,6 +46,6 @@ $realisateurs = $requete->fetchAll();
 $titre = "add Film ";
 $titre_secondaire = "add Film";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";
 
 ?>

@@ -11,7 +11,7 @@ class HomeController {
         $pdo = Connect::seConnecter();
        
 
-        require "view/home.php";
+        require "view/template/home.php";
 
     }
 }

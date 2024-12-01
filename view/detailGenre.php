@@ -6,6 +6,8 @@ $films = $requeteFilmGenre->fetchAll();
 
 ?>
 
+<h1 class="titleCategory">Détail des Genres</h1>
+
 <table class="uk-table uk-table-striped">
     <thead>
         <tr>
@@ -34,6 +36,6 @@ $films = $requeteFilmGenre->fetchAll();
 $titre = "Detail genre";
 $titre_secondaire = "Detail genres";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";
 
 ?>

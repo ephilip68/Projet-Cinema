@@ -6,6 +6,8 @@ $acteur = $requete->fetch();
 
 ?>
 
+<h1 class="titleCategory">Détail des Acteurs</h1>
+
 <table class="uk-table uk-table-striped">
     <thead>
         <tr>
@@ -46,6 +48,6 @@ $acteur = $requete->fetch();
 $titre = "Detail Acteur";
 $titre_secondaire = "Detail Acteurs";
 $contenu = ob_get_clean();
-require "view/template.php";
+require "view/template/template.php";
 
 ?>

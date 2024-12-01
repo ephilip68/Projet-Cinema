@@ -1,8 +1,693 @@
-.home{
+/*********************************** BODY ****************************************/
+*{
+
+   box-sizing: border-box; 
+
+}
+
+.page{
+
+    background-color: black;
+    
+    height: 100vh;
+
+}
+
+/*********************************** NAVBAR ****************************************/
+
+/************ Navbar Container ************/
+#navbar-container{
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+}
+
+.navContent{
+
+    width: 26.5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/************ Logo ************/
+#logo{
+
+    width:60%;
+    padding-left: 2em;
+      
+}
+
+#logo a{
+    
+    color: white;
+    width: 81%;
+    padding-left: .4em;
+    background: rgb(110,7,7);
+    font-weight: 900;
+
+}
+
+/************ Logo Hover ************/
+#logo a:hover{
+
+    text-decoration: none;
+
+}
+
+/************ Navbar Liste ************/
+#liMenu a{
+
+    color: white;
+    font-weight: 600;
+
+}
+
+#liMenu2 a{
+
+    color: white;
+    font-weight: 600;
+
+}
+
+/************ Navbar Liste Hover ************/
+#liMenu a:hover{
+
+    color: rgb(206, 7, 7);
+
+}
+
+#liMenu2 a:hover{
+
+    color: rgb(206, 7, 7);
+
+}
+
+
+/*********************************** CONTAINER CONTENT ****************************************/
+
+#contenu{
+
+    height: 730px;
+    width: 100%;
+    background: black;
+
+}
+
+.titleCategory{
+
+    color: white;
+}
+
+/*********************************** MENU ****************************************/
+#navMenu{
+
+    width: 18%;
+    display: flex;
+    
+}
+
+#navMenu h3{
+
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-left: 2.5em;
+    font-weight: 600;
+
+}
+
+
+.listContent{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2em 0 0 4em;
+    color: white;
+
+}
+
+.divider{
+
+    border-bottom: 2px solid rgb(110,7,7);
+    margin: 2em 0 0 5em;
+    width: 100%;
+}
+
+
+.listContent2{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2em 0 0 4em;
+    color: white;
+
+}
+
+.listContent i{
+
+   color: white;
+   border-left: none;
+   padding: 0 1em 0 .5em;
+   
+
+}
+
+.listContent2 i{
+
+   color: white;
+   border-left: none;
+   padding: 0 1em 0 .5em;
+
+}
+
+.listContent i:hover{
+
+    color: rgb(206, 7, 7);
+    cursor: pointer;
+    border-left: 3px solid rgb(206, 7, 7);
+
+}
+
+.listContent2 i:hover{
+
+    color: rgb(206, 7, 7);
+    cursor: pointer;
+    border-left: 3px solid rgb(206, 7, 7);
+
+}
+
+/*********************************** TREANDING MOVIE ****************************************/
+#navList{
+
+    width: 60%;
+    
+}
+
+.title{
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+
+}
+
+.title img{
+
+    width: 25px;
+    height: 30px;
+    padding-bottom: .48em;
+
+}
+
+#navList h3{
+
+    color: white;
+    padding-bottom: .3em;
+    font-weight: 600;
+
+}
+
+.treanding{
+
+    display: flex;
+    align-items: center;  
+    width: 100%;
+
+}
+
+/************ treanding figure ************/
+.treandingtFigure{
+
+    width: 95%;
+    height: 300px;
+    position: relative;
+    border-radius: 15px;
+    background-image: url(../img/timeCut.webp);
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 45%;
+    height: 31.5vh;
+    overflow: hidden;
+    
+}
+
+/************ treanding figure 2 ************/
+.treandingtFigure2{
+
+    width: 95%;
+    height: 300px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15px;
+    background-image: url(../img/Plateforme2.webp);
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 32%;
+    height: 31.5vh;
+    overflow: hidden;
+              
+}
+
+/************ treanding figure 3 ************/
+.treandingtFigure3{
+
+    width: 95%;
+    height: 300px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15px;
+    background-image: url(../img/xxx.jpg);
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 70%;
+    height: 31.5vh;
+    overflow: hidden;
+    
+} 
+
+/************ img ************/
+
+.imgPosition{
+
+    position: absolute;
+    width: 25%;
+    padding: none;
+    left: 0%;
+    top: 3.2%;
+
+}
+
+.imgPosition img{
+
+    height: 250px;
+    border-radius: 15px;
+  
+}
+
+/************ treanding film ************/
+
+.treandingFilm{
+
+    display: block;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0,.5);
+    padding: 1em 0 0 17em;
+    color: white;
+    
+}
+
+.treandingFilm h4{
+
+    color: white;
+    font-weight: 500;
+
+}
+
+.treandingFilm span{
+
+    font-weight: 400;
+
+}
+
+.treandingFilm p{
+
+    width: 80%;
+    text-align: justify;
+    font-weight: 100;
+    font-size: .75em;
+    color: white;
+
+}
+
+/************ treanding genre ************/
+
+.treandingGenre{
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.genre1{
+
+    background-color: rgba(0, 0, 0,.5);
+    width: 25%;
+    height: 28px;
+    text-align: center; 
+
+}
+
+.genre2{
+
+    background-color: rgba(0, 0, 0,.5);
+    width: 15%;
+    height: 28px;
+    text-align: center; 
+    
+}
+
+.genre3{
+
+    background-color: rgba(0, 0, 0,.5);
+    width: 25%;
+    height: 28px;
+    text-align: center; 
+
+}
+
+.genre1 span{
+
+    font-size: .8em;
+
+}
+
+.genre2 span{
+
+    font-size: .8em;
+
+}
+
+.genre3 span{
+
+    font-size: .8em;
+
+}
+
+/************ treanding btn ************/
+
+.treandingBtn{
+
+    display: flex;
+    padding-top: 1.7em;
+    width: 100%;
+    height: 40px;
+    gap: 20px;
+    
+}
+
+.btn1{
+
+    width: 25%;
+
+}
+
+.btn2{
+
+    width: 25%;
+    
+}
+
+.btn-1{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0,.5);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+
+}
+
+.btn-2{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(0deg, rgba(110,7,7,1) 10%, rgba(212,13,13,1) 100%);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    
+}
+
+/************ btn hover ************/
+.btn-1:hover{
+
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.btn-2:hover{
+
+   cursor: pointer;
+   background: rgb(206, 7, 7);
+
+}
+
+/*********************************** TOP RATED ****************************************/
+
+/************ listRated ************/
+.listRated{
+
+    width: 100%;
+    height: 100px;
+
+}
+
+.titleRated{
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.titleRated img{
+
+    width: 25px;
+    height: 25px;
+    margin-top: 1.1em;
+
+}
+
+.listRated h3{
+
+    padding: 1em 0 .3em 0;
+
+}
+
+/************ rated ************/
+.rated{
+
+    display: flex;
+    width: 95%;
+    height: 100px; 
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.rated img{
+
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+   
+}
+
+/*********************************** UPCOMING MOVIE ****************************************/
+
+/************ navMovie ************/
+#navMovie{
+
+    width: 22%;
+     
+}
+
+.titleUp{
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+
+}
+
+.titleUp img{
+
+    width: 25px;
+    height: 25px;
+
+}
+
+#navMovie h3{
+
+    color: white;
+    
+}
+
+/************ Movie ************/
+.movie{
+
+    display: block;
+    padding-top: .3em;
+
+}
+
+.movie p{
+
+    color: white;
+    font-size: .75em;
+    font-weight: 100;
+    width: 80%;
+    
+}
+
+.movie img{
+
+   border-radius: 15px;
+   width: 80%;
+   height: 200px;
+
+}
+
+/*********************************** FOOTER ****************************************/
+
+.containerFooter{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-top: 3px solid rgb(110,7,7);
+    padding-top: 1.2em;
+    background: black;
+
+
+}
+
+.footerText{
+
+    width: 30%;
+    color: white;
+    justify-content: center;
+    padding-left: 12em;
+    
+}
+
+.footerText p{
+
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.footerIcone {
+
+    display: flex;
+    gap: 10px; 
+    padding-bottom: 1em;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.fa-copyright{
+
+    font-size: 1em;
+    
+}
+
+.fa-location-dot{
+
+    font-size: 1.3em;
+}
+
+.footerText2{
+
+    width: 25%;
+    height: 100%;
+    color: white;
+    justify-content: center;
+  
+}
+
+.form{
+
+    width: 100%;
+    padding-bottom: 1em;
+    
+     
+}
+
+.social{
+
+    width: 35% ;
+    text-align: center;
+    
+}
+
+.social a{
+
+    color: white;
+    background-color: black;
+
+}
+
+.social a:hover{
+
+    color: rgb(206, 7, 7);
+
+}
+
+
+#langues{
+
+    background: linear-gradient(0deg, rgba(110,7,7,1) 10%, rgba(212,13,13,1) 100%);
+    width: 35%;
+    border: none;
+    border-radius: 5px;
+    padding: .5em 0;
+    color: white;
+    font-weight: 600;
+
+}
+
+#langues option{
+
     background-color: black;
 }
 
+/*********************************** FORMULAIRE ****************************************/
 
-.uk-text-center h3{
-    color: white;
+form{
+
+    width: 100%;
+
+    
 }
+
+#addform {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+
+
+
+
+
+
+
+
+
