@@ -5,7 +5,7 @@
 <table class="uk-table uk-table-striped" id="tableActeur">
     <thead>
         <tr>
-            
+            <th>IMG</th>
             <th>NOM</th>
             <th>PRENOM</th>
         </tr>
@@ -16,6 +16,7 @@
         
                 ?>
                 <tr>
+                <td><a href="index.php?action=detailActeur&id=<?= $acteur['id_acteur']?>"><?php echo $acteur["img"] ?></a></td>
                     <td><a href="index.php?action=detailActeur&id=<?= $acteur['id_acteur']?>"><?php echo $acteur["nom"] ?></a></td>
                     <td><a href="index.php?action=detailActeur&id=<?= $acteur['id_acteur']?>"><?php echo $acteur["prenom"] ?></a></td>
                 </tr>

@@ -8,6 +8,7 @@
     <form action="index.php?action=addRealisateur" method="post">
         <div id="addform">
             <label>Prénom</label>
+            <label>Prénom</label>
             <input type="text" name="prenom">
             <label>Nom</label>
             <input type="text" name="nom">

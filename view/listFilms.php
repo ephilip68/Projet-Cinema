@@ -5,6 +5,7 @@
 <table class="uk-table uk-table-striped">
     <thead>
         <tr>
+            <th>IMAGE</th>
             <th>TITRE</th>
             <th>ANNEE</th>
             <th>DUREE</th>
@@ -16,7 +17,16 @@
              foreach($requete->fetchAll() as $film) { 
                 ?>
                  <tr>
-                    <td><a href="index.php?action=detailFilm&id=<?= $film['id_film']?>"><?php echo $film["titre"] ?></a></td>
+                 <td>
+                    <?php if (!empty($film["img"])): ?>
+                        <img src="<?= htmlspecialchars($film["img"]) ?>" class="film-image-full">
+                    <?php else: ?>
+                        <div class="uk-card-body">
+                            <p>Aucune image disponible.</p>
+                        </div>
+                    <?php endif; ?>
+                </td>
+                    <td><?php echo $film["titre"] ?></td>
                     <td><?php echo $film["annee"] ?></td> 
                     <td><?php echo $film["duree"] ?></td> 
                     <td><?php echo $film["resumes"] ?></td> 
@@ -37,3 +47,4 @@ $titre = "Liste des films";
 $titre_secondaire = "Liste des films";
 $contenu = ob_get_clean();
 require "view/template/template.php";
+

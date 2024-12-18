@@ -9,8 +9,10 @@ $realisateurs = $requete->fetchAll();
 
 
 <div>
-    <form action="index.php?action=addFilm" method="post">
+    <form action="index.php?action=addFilm" method="post" enctype="multipart/form-data">
         <div>
+            <label>Image</label>
+            <input type="file" name="img" id="img">
             <label >Titre</label>
             <input type="text" name="titre">
             <label>Année</label>
@@ -19,7 +21,6 @@ $realisateurs = $requete->fetchAll();
             <input type="number" name="duree" min="0">
             <label>Resume</label>
             <textarea name="resumes" id="resumes" cols="30" rows="10"></textarea>
-
         </div>
 
         <!-- Menu déroulant pour selectionner un realisateur existant -->
